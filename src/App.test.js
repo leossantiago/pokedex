@@ -1,9 +1,11 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders <App /> component without crashing", () => {
+  const {} = render(<App />);
+
+  // console.log(container.asFragment(<PokemonCard />));
+  // const linkElement = getByText(/learn react/i);
+  // expect(container.firstChild()).toBeInTheDocument();
 });
